@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Singapore Neurodynamics</title>
+  <!-- TODO(Andy): confirm the description line -->
+  <meta name="description" content="Singapore Neurodynamics. Website coming soon.">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --fg: #1c1d1f;
+      --muted: #6b6d72;
+      --rule: #d9d6cc;
+      --accent: #2f5d62;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121315;
+        --fg: #ecebe6;
+        --muted: #9a9ca1;
+        --rule: #2a2c30;
+        --accent: #7fb2b6;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 24px;
+    }
+    main { max-width: 640px; margin: 0 auto; width: 100%; }
+    .mark { width: 44px; height: 44px; color: var(--accent); margin-bottom: 32px; }
+    h1 {
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      margin: 0 0 16px;
+    }
+    p.tagline { font-size: 1.15rem; line-height: 1.55; color: var(--muted); margin: 0 0 40px; }
+    hr { border: 0; border-top: 1px solid var(--rule); margin: 0 0 24px; }
+    .contact { font-size: 0.95rem; color: var(--muted); }
+    .contact a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+    footer { max-width: 640px; margin: 0 auto; width: 100%; padding: 48px 0 32px; font-size: 0.8rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Abstract ridge-flow mark: concentric arcs -->
+    <svg class="mark" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+      <path d="M6 30c4-12 28-12 32 0"/>
+      <path d="M10 30c3-8 21-8 24 0"/>
+      <path d="M14 30c2-4 14-4 16 0"/>
+      <path d="M4 36c6-4 30-4 36 0"/>
+    </svg>
+    <h1>Singapore Neurodynamics</h1>
+    <!-- TODO(Andy): replace with your tagline -->
+    <p class="tagline">Website coming soon.</p>
+    <hr>
+    <!-- Contact email confirmed by Andy 2026-10-24; swap for a domain address later -->
+    <p class="contact">Contact: <a href="mailto:andywhittaker@gmail.com">andywhittaker@gmail.com</a></p>
+  </main>
+  <footer>&copy; <span id="y">2026</span> Singapore Neurodynamics</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
