@@ -51,6 +51,6 @@ Note: Hobby is for non-commercial use under Vercel's terms. A simple holding pag
 
 ## Placeholders to confirm in index.html
 
-- Tagline (currently "Website coming soon.")
+- Tagline: set (image solutions, AI, calibrated probabilities)
 - Contact email: andywhittaker@gmail.com (confirmed; swap for a domain address later)
 - Domain (for step 4)
